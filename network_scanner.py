@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# For this script to work you need to have scapy installed
 import scapy.all as scapy
 import argparse
 
