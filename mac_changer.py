@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-
-# This script allow you to change the mac address of
-# a linux host who already has installed net-tools.
-
 import subprocess
 import argparse
 import re
@@ -20,6 +16,7 @@ def get_arguments():
         argparse.error("Please specify a MAC, --help for more information.")
 
     return args
+
 
 def mac_changer(interface, mac):
     print(f"[+] Changinc MAC address for {interface} to {mac}.")

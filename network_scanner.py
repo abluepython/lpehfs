@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# For this script to work you need to have scapy installed
 import scapy.all as scapy
 import argparse
 
@@ -8,6 +7,7 @@ def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--target", dest="target", help="Target IP or IP range.")
     options = parser.parse_args()
+
     return options
 
 
